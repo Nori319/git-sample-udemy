@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitスタッシュの使い方</title>
+</head>
+<body>
+    <h1>Gitスタッシュの使い方</h1>
+    <p>Gitスタッシュは、作業中の変更を一時的に保存するための機能です。以下に基本的な使い方を示します。</p>
+
+    <h2>1. 変更をスタッシュする</h2>
+    <pre><code>git stash</code></pre>
+    <p>このコマンドを実行すると、作業中の変更がスタッシュに保存され、ワーキングディレクトリがクリーンな状態になります。</p>
+
+    <h2>2. スタッシュを一覧表示する</h2>
+    <pre><code>git stash list</code></pre>
+    <p>現在のスタッシュの一覧を表示します。</p>
+
+    <h2>3. スタッシュを適用する</h2>
+    <pre><code>git stash apply</code></pre>
+    <p>最新のスタッシュを適用します。特定のスタッシュを適用する場合は、<code>git stash apply stash@{n}</code>のように指定します。</p>
+
+    <h2>4. スタッシュを削除する</h2>
+    <pre><code>git stash drop</code></pre>
+    <p>最新のスタッシュを削除します。特定のスタッシュを削除する場合は、<code>git stash drop stash@{n}</code>のように指定します。</p>
+
+    <h2>5. スタッシュをポップする</h2>
+    <pre><code>git stash pop</code></pre>
+    <p>最新のスタッシュを適用し、同時にスタッシュから削除します。</p>
+</body>
+</html>
